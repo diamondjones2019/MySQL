@@ -1,0 +1,26 @@
+create table travel 
+(
+Popular int(2),
+City varchar(50) not null,
+State varchar(50) not null,
+primary key (Popular)
+);
+
+SELECT * FROM test.travel;
+
+
+Insert into test.travel(Popular, City, State)
+Values ('1', 'New York', 'NY'), ('2', 'Los Angeles', 'CA'), ('3', 'Chicago', 'IL'), ('4', 'Houston', 'TX'), ('5', 'Philadelphia', 'PA'), ('6', 'Phonenix', 'AZ'), ('7', 'San Antonio', 'TX'), ('8', 'Atlantic City', 'NJ'), ('9', 'Indianapolis', 'IN' ), ('10', 'Jackson', 'FL');
+
+
+SELECT * FROM test.travel;
+
+
+select Popular, City, State
+from test.travel
+Order by City, State DESC;
+
+
+select Popular, State
+from test.travel
+group by Popular;
