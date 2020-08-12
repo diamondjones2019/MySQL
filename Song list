@@ -1,0 +1,38 @@
+create table music 
+(
+genre varchar(50),
+artist varchar(50) not null,
+song varchar(50) not null,
+chart int(5) not null,
+primary key (genre)
+);
+
+
+insert into test.music(genre, artist, song, chart)
+values ('Hip-Hop', 'Missy Elliot', 'Loose Control', '2'), ('R&B', 'Ne-Yo', 'Miss Independent', '5'), ('Pop', 'Adele', 'Someone Like You', '10'), ('Rap', 'Megan The Stallion', 'Savage', '9');
+
+
+SELECT * FROM test.music;
+
+
+alter table test.music
+rename column genre to Genre;
+
+alter table test.music
+rename column artist to Artist;
+
+alter table test.music
+rename column song to Song;
+
+alter table test.music
+rename column chart to Chart;
+
+
+select *
+from test.music
+Order by Chart ASC;
+
+
+select Genre, Chart
+from test.music
+group by Genre;
