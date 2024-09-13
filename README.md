@@ -1,5 +1,5 @@
 # SUMMARY
-Creating tables in SQL 
+Learning how to CRUD tables in SQL
 
 # PROJECTS
 1. Songs
