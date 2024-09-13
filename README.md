@@ -1,5 +1,5 @@
 # SUMMARY
-Manipulating dataset in SQL to summarize the data
+Creating tables in SQL 
 
 # PROJECTS
 1. Songs
